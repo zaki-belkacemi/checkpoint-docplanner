@@ -6,6 +6,27 @@
     font-family: Quicksand ;
     src: url(../fonts/Quicksand-Light.ttf);
 }
+@keyframes third-section-div2 {
+    from{
+        grid-row-start: 3;
+        grid-row-end: 5;
+    }
+    to{
+        grid-row-start: 2;
+        grid-row-end: 4;
+    }
+}
+@keyframes third-section-div4 {
+    from{
+        grid-row-start: 6;
+        grid-row-end: 8;
+    }
+    to{
+        grid-row-start: 5;
+        grid-row-end: 7;
+    }
+}
+
 body{
     font-family: Roboto,Arial,sans-serif;
 }
@@ -112,7 +133,6 @@ body{
     color: white;
     padding-left: 30px;
    font-size: 20px;
-   
 }
 .first-div:hover{
     background-color: #0fd0b6 ;
@@ -163,7 +183,6 @@ body{
 /* second-section */
 .second-section{
    margin-left: 20%;
-  
 }
 .second-section-container{
     display: flex;
@@ -214,6 +233,7 @@ body{
     grid-column-end: 4;
     grid-row-start: 3;
     grid-row-end: 4;
+    
 }
 .third-section-div1 h3 {
     color: #00b39b;
@@ -231,8 +251,9 @@ body{
 .docplanner-img{
     padding-top: 1px;
     width: 420px;
-    height: 350px;
+    height: 300px;
     justify-self: start;
+    object-fit:cover;
 }
 .third-section-div2{
     background-color: white;
@@ -241,6 +262,8 @@ body{
     grid-row-start: 3;
     grid-row-end: 5;
     text-align: center;
+    animation: third-section-div2;
+    animation-duration: 1s;
 }
 .third-section-div3{
     background-color: white;
@@ -257,6 +280,8 @@ body{
     grid-row-start: 6;
     grid-row-end: 8;
     text-align: center;
+    animation: third-section-div4;
+    animation-duration: 1s;
 }
 .third-section-div5{
     background-color: white;
@@ -266,7 +291,7 @@ body{
     grid-row-end: 7;
     text-align: center;
 }
-.third-section-div2 ,.third-section-div3 ,.third-section-div4,.third-section-div5  img{
+d-section-div2 ,.third-section-div3 ,.third-section-div4,.third-section-div5  img{
     padding-top: 20px;
   }
 .third-section-div2 h3,.third-section-div3 h3,.third-section-div4 h3,.third-section-div5 h3{
